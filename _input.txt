@@ -1,1 +1,1 @@
-.\tests\pow.cm
+.\tests\fact.cm
