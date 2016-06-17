@@ -1,3 +1,4 @@
+# Makefile for C-Minus
 CC = gcc
 CFLAGS = -g -DDEBUG -Wall -std=c99
 DEPS = globals.h utils.h scan.h parse.h symtab.h analyze.h code.h cgen.h
