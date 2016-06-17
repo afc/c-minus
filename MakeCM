@@ -1,0 +1,21 @@
+CC = gcc
+CFLAGS = -g -DDEBUG -Wall -std=c99
+DEPS = globals.h utils.h scan.h parse.h symtab.h analyze.h code.h cgen.h
+OBJS = main.o utils.o scan.o parse.o symtab.o analyze.o code.o cgen.o
+BIN = cm
+
+%.o: %.c $(DEPS)
+	$(CC) -c $(CFLAGS) -o $@ $<
+
+all: build
+
+build: $(OBJS)
+	$(CC) $(CFLAGS) -o $(BIN) $^
+	rm -f *.o *~
+
+rebuild: clean all
+
+.PHONY: clean
+
+clean:
+	rm -f *.o *~ $(BIN)

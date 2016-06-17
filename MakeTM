@@ -1,0 +1,21 @@
+# Makefile for TM
+CC = gcc
+CFLAGS = -g -DDEBUG -Wall -std=c99
+OBJS = tm.o
+BIN = tm
+
+%.o: %.c
+	$(CC) -c $(CFLAGS) -o $@ $<
+
+all: build
+
+build: $(OBJS)
+	$(CC) $(CFLAGS) -o $(BIN) $^
+	rm -f *.o *~
+
+rebuild: clean all
+
+.PHONY: clean
+
+clean:
+	rm -f *.o *~ $(BIN)

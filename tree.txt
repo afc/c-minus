@@ -1,0 +1,27 @@
+©¦  analyze.c
+©¦  analyze.h
+©¦  cgen.c
+©¦  cgen.h
+©¦  code.c
+©¦  code.h
+©¦  globals.h
+©¦  main.c
+©¦  MakeCM
+©¦  MakeTM
+©¦  parse.c
+©¦  parse.h
+©¦  scan.c
+©¦  scan.h
+©¦  symtab.c
+©¦  symtab.h
+©¦  tm.c
+©¦  utils.c
+©¦  utils.h
+©¦  _input.txt
+©¦          
+©¸©¤tests
+        fact.cm
+        fib.cm
+        gcd.cm
+        sort.cm
+        sum.cm
