@@ -1,6 +1,6 @@
 int is_even(int n)
 {
-    return n-n/2*2;
+    return n-n/2*2 == 0;
 }
 
 int pow(int x, int n)
@@ -9,6 +9,7 @@ int pow(int x, int n)
         return 1;
     if (n == 1)
         return x;
+    
     if (is_even(n))
         return pow(x*x, n/2);
     else
@@ -17,6 +18,6 @@ int pow(int x, int n)
 
 int main()
 {
-    output(pow(2, 3));
+    output(pow(input(), input()));
     return 0;
 }
