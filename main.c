@@ -85,7 +85,6 @@ int main(int argc, char *argv[])
 	
 	if (src == NULL) {
 		sprintf(median, "Cannot open `%s'", input);
-        puts("ERROR");
 		PANIC(1, median);
 		exit(-2);
 	}

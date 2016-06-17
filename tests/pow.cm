@@ -1,0 +1,22 @@
+int is_even(int n)
+{
+    return n-n/2*2;
+}
+
+int pow(int x, int n)
+{
+    if (n == 0)
+        return 1;
+    if (n == 1)
+        return x;
+    if (is_even(n))
+        return pow(x*x, n/2);
+    else
+        return pow(x*x, n/2) * x;
+}
+
+int main()
+{
+    output(pow(2, 3));
+    return 0;
+}
